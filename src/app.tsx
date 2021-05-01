@@ -10,6 +10,7 @@ function App() {
       <HashRouter>
         <Switch>
           <Route exact path="/">
+            <Home/>
           </Route>
         </Switch>
       </HashRouter>
