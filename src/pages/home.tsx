@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from 'react';
 import './home.scss';
 import headerBg from '../images/header.png';
-import Top10Chart from '../components/top-10-chart';
+import CountChart from '../components/CountChart';
 
+import TreatChart from '../components/TreatChart'
 
 export const Home = () => {
   return (
@@ -10,9 +11,13 @@ export const Home = () => {
       <header style={{backgroundImage: `url(${headerBg})`}}/>
       <main>
         <section className="section1">
-          <Top10Chart/>
+          <CountChart/>
+          <TreatChart/>
         </section>
-        <section className="bordered section2"></section>
+        <section className="bordered section2">
+          {/* 治愈情况 */}
+          dsds
+        </section>
         <section className="bordered section3"></section>
         <section className="bordered section4"></section>
         <section className="bordered section5"></section>

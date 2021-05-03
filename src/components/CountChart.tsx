@@ -1,21 +1,14 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
-import './top-10-chart.scss'
+import { px } from '../utils'
+import { baseEchartOptions } from '../shared/baseChartOptions';
 
-const px = (n) => n / 2420 * (window as any).pageWidth;
-
-
-const Top10Chart = () => {
+const CountChart = () => {
   const divRef = useRef(null);
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption({
-      textStyle: {
-        fontSize: px(12),
-        color: '#79839E'
-      },
-      title: {show: false},
-      legend: {show: false},
+      ...baseEchartOptions,
       xAxis: {
         data:  ['东城区', '西城区', '朝阳区', '丰台区', '海淀区', '顺义区', '通州区', '大兴区', '房山区'],
         axisTick: {show: false},
@@ -35,12 +28,6 @@ const Top10Chart = () => {
           }
         },
       },
-      grid: {
-        x: px(40),
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
-      },
       yAxis: {
         splitLine: {show: false},
         axisLine: {
@@ -58,11 +45,11 @@ const Top10Chart = () => {
     });
   }, []);
 
-  return <div className="bordered top-10-chart">
+  return <div className="bordered conut-chart">
     <h2>重要区域管辖统计</h2>
     <div ref={divRef} className="chart">
     </div>
   </div>;
 };
 
-export default Top10Chart;
+export default CountChart;
