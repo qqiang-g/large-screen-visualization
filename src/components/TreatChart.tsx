@@ -1,15 +1,14 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
 import { px } from '../utils'
-import { baseEchartOptions } from '../shared/baseChartOptions';
+import { creatChartOptions } from '../shared/chartOptions';
 
 const CountChart = () => {
   const divRef = useRef(null);
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption(
-      {
-      ...baseEchartOptions,
+      creatChartOptions({
       grid: {
         x: px(100),
         y: px(40),
@@ -42,7 +41,7 @@ const CountChart = () => {
             data: [25, 38, 31, 12, 41, 18, 30, 20, 11]
           }
         ]
-      }
+      })
     );
   }, []);
 

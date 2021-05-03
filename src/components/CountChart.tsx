@@ -1,14 +1,13 @@
 import React, {useEffect, useRef} from 'react';
 import * as echarts from 'echarts';
 import { px } from '../utils'
-import { baseEchartOptions } from '../shared/baseChartOptions';
+import { creatChartOptions } from '../shared/chartOptions';
 
 const CountChart = () => {
   const divRef = useRef(null);
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
-    myChart.setOption({
-      ...baseEchartOptions,
+    myChart.setOption(creatChartOptions({
       xAxis: {
         data:  ['东城区', '西城区', '朝阳区', '丰台区', '海淀区', '顺义区', '通州区', '大兴区', '房山区'],
         axisTick: {show: false},
@@ -42,7 +41,7 @@ const CountChart = () => {
         type: 'bar',
         data: [10, 20, 36, 41, 15, 26, 37, 18, 29]
       }]
-    });
+    }));
   }, []);
 
   return <div className="bordered conut-chart">
