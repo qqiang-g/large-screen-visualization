@@ -35,12 +35,34 @@ const CountChart = () => {
           {
             name: '昨天',
             type: 'bar',
-            data: [89, 23, 34, 10, 44, 30, 33, 22, 11]
+            data: [89, 23, 34, 10, 44, 30, 33, 22, 11],
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                  offset: 0,
+                  color: '#2034f9'
+                }, {
+                  offset: 1,
+                  color: '#04a1ff'
+                }]),
+              }
+            }
           },
           {
             name: '今天',
             type: 'bar',
-            data: [25, 38, 31, 12, 41, 18, 30, 20, 11]
+            data: [25, 38, 31, 12, 41, 18, 30, 20, 11],
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+                  offset: 0,
+                  color: '#b92ae8'
+                }, {
+                  offset: 1,
+                  color: '#6773e7'
+                }]),
+              }
+            }
           }
         ]
       })
