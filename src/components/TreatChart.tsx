@@ -23,7 +23,9 @@ const CountChart = () => {
         },
         xAxis: {
           type: 'value',
-          boundaryGap: [0, 0.01]
+          boundaryGap: [0, 0.01],
+          splitLine: {show: false},
+          axisLabel: {show: false}
         },
         yAxis: {
           type: 'category',
@@ -45,9 +47,12 @@ const CountChart = () => {
     );
   }, []);
 
-  return <div className="bordered conut-chart">
+  return <div className="bordered treat-chart">
     <h2>重要区域治愈情况</h2>
-    <div ref={divRef} className="chart">
+    <div ref={divRef} className="chart"/>
+      <div className="legend">
+        <span className="first"/> 昨天
+        <span className="second"/> 今天
     </div>
   </div>;
 };
