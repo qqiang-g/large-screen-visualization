@@ -10,7 +10,7 @@ const CountChart = () => {
     myChart.setOption(
       creatChartOptions({
       grid: {
-        x: px(100),
+        x: px(70),
         y: px(40),
         x2: px(40),
         y2: px(40),
