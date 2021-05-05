@@ -5,8 +5,12 @@
   > header {
     height: px(99);
     background-size: cover;
+    width: px(2420);
+    margin: 0 auto;
   }
   > main {
+    width: px(2420);
+    margin: 0 auto;
     padding-top: px(30);
     flex: 1;
     display: grid;
@@ -110,6 +114,13 @@
   }
   > footer {
     height: px(68);
-    margin-top: px(20);
+    border: 1px solid #0d2d59;
+    margin: px(20) 0 1px;
+    border-radius: 4px;
+    background: #0c0d2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: px(20);
   }
 }

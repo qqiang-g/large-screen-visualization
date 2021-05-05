@@ -6,7 +6,7 @@ import CountChart from '../components/CountChart';
 import TreatChart from '../components/TreatChart'
 
 export const Home = () => {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
   return (
     <div className="home">
       <header style={{backgroundImage: `url(${headerBg})`}}/>
