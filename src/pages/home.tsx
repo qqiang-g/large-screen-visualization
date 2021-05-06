@@ -12,11 +12,13 @@ export const Home = () => {
       <header style={{backgroundImage: `url(${headerBg})`}}/>
       <main>
         <section className="section1">
+          {/* 重要区域统计 */}
           <CountChart/>
+          {/* 治愈情况 */}
           <TreatChart/>
         </section>
         <section className="bordered section2">
-          {/* 治愈情况 */}
+          {/* 病毒传入来源 */}
           <BrokenLineChart />
         </section>
         <section className="bordered section3"></section>
