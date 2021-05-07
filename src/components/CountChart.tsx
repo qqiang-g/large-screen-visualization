@@ -9,7 +9,7 @@ const CountChart = () => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption(creatChartOptions({
       xAxis: {
-        data:  ['东城区', '西城区', '朝阳区', '丰台区', '海淀区', '顺义区', '通州区', '大兴区', '房山区'],
+        data:  ['北京', '浙江', '广州', '郑州', '长春', '沈阳', '昆明', '成都', '南京'],
         axisTick: {show: false},
         axisLine: {
           lineStyle: {color: '#083B70'}
