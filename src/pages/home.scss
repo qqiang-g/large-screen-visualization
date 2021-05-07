@@ -52,6 +52,9 @@
     }
     > .section2 {
       grid-area: box2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     > .section3 {
       grid-area: box3;
@@ -84,6 +87,11 @@
         width: 100%;
       }
     }
+
+    .broken-line-chart, .analysis-chart {
+      height: px(363);
+    }
+
     // 治愈情况
     .treat-chart {
       height: px(423);
