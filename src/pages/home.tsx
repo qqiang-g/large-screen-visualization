@@ -5,6 +5,8 @@ import CountChart from '../components/CountChart';
 import TreatChart from '../components/TreatChart';
 import BrokenLineChart from '../components/BrokenLineChart';
 import AnalysisChart from '../components/AnalysisChart';
+import ContrastChart from '../components/ContrastChart'
+
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -24,7 +26,9 @@ export const Home = () => {
           {/* 月份分析 */}
           <AnalysisChart/>
         </section>
-        <section className="bordered section3"></section>
+        <section className="bordered section3">
+          <ContrastChart/>
+        </section>
         <section className="bordered section4"></section>
         <section className="bordered section5"></section>
       </main>
