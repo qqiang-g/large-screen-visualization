@@ -8,6 +8,13 @@ const AnalysisChart = () => {
   useEffect(() => {
     var myChart = echarts.init(divRef.current);
     myChart.setOption(creatChartOptions({
+      grid: {
+        x: px(20),
+        x2: px(20),
+        y: px(20),
+        y2: px(20),
+        containLabel: true
+      },
       xAxis: {
         type: 'category',
         boundaryGap: false,
@@ -21,7 +28,7 @@ const AnalysisChart = () => {
         splitLine: {lineStyle: {color: '#073E78'}},
         axisLabel: {
           formatter(val) {
-            return val * 100 + '例';
+            return val  + '例';
           }
         }
       },
