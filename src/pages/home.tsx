@@ -6,7 +6,7 @@ import TreatChart from '../components/TreatChart';
 import BrokenLineChart from '../components/BrokenLineChart';
 import AnalysisChart from '../components/AnalysisChart';
 import ContrastChart from '../components/ContrastChart'
-
+import MapChart from '../components/MapChart'
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -29,7 +29,9 @@ export const Home = () => {
         <section className="bordered section3">
           <ContrastChart/>
         </section>
-        <section className="bordered section4"></section>
+        <section className="bordered section4">
+          <MapChart/>
+        </section>
         <section className="bordered section5"></section>
       </main>
       <footer>
