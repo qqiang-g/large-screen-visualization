@@ -8,7 +8,7 @@ const AgeTrendChart = () => {
   }, []);
 
   return (
-    <div className="age--trend-chart">7
+    <div className="age-trend-chart">7
       <div ref={divRef} className="chart">
 
       </div>

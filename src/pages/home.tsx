@@ -34,7 +34,7 @@ export const Home = () => {
         </section>
         <section className="bordered section4">
           <MapChart/>
-          <div className="bordered 年龄段">
+          <div className="bordered age">
             <h2>新冠感染年龄段分布</h2>
             <div className="charts">
               <SixChart/>
