@@ -204,20 +204,15 @@
         flex-direction: column;
       }
 
-      .six-chart {
+      .six-chart, .age-chart {
         .legend {
           height: px(40); 
           display: flex; 
           align-items: center;
-          justify-content: center;
-          font-size: px(16);
-          > span {
-            display: inline-block;
-            width: px(40);
-            height: px(20);
-            border-radius: px(4);
-            margin: 0 px(10);
-          }
+          justify-content: center; flex-wrap: wrap;
+          font-size: px(12);
+          > span {display: inline-block; width: px(16); height: px(10);
+            border-radius: px(2); margin: 0 px(10);}
           .male {background: #33a4fa;}
           .female {background: #8d70f8;}
         }
