@@ -2,12 +2,14 @@
 
 .home {flex: 1;height: 100%;display: flex;flex-direction: column;
   background: #010310; color: white;
+
   > header {
     height: px(99);
     background-size: cover;
     width: px(2420);
     margin: 0 auto;
   }
+
   > main {
     width: px(2420);
     margin: 0 auto;
@@ -19,7 +21,9 @@
       "box3 box3 box4 box5" 363fr / 366fr 361fr 811fr 747fr;
     grid-column-gap: px(28);
     grid-row-gap: px(28);
+
     > section {text-align: center;}
+
     .bordered {
       border: 1px solid #0764bc;
       border-radius: 4px;
@@ -44,24 +48,32 @@
         0 -9px 0 -8px #0d4483,;
       }
     }
+
     > .section1 {
       grid-area: box1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
+
     > .section2 {
       grid-area: box2;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
+
     > .section3 {
       grid-area: box3;
     }
+
     > .section4 {
       grid-area: box4;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+
     > .section5 {
       grid-area: box5;
     }
@@ -133,6 +145,7 @@
             height: px(70);
             box-shadow: inset 0 0 px(60) 0 #1f3d85;
           }
+          
         }
         tbody {
           td {height: px(50); width: px(84);
@@ -143,6 +156,7 @@
       }
     }
 
+    // 地图
     .map-chart{
       height: px(753); background: transparent;
       > .wrapper {
@@ -171,6 +185,20 @@
         }
       }
     }
+
+    .年龄段 {display: flex;flex-direction: column;
+      height: px(363);
+      > .charts {
+        width: 100%;flex: 1; border: 1px solid red;
+        display: flex; padding: px(30);
+      }
+      &-图1, &-图2, &-图3 {
+        flex: 1;
+        border: 1px solid red;
+        display: flex; flex-direction: column;
+      }
+    }
+
   }
   > footer {
     height: px(68);

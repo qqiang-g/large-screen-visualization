@@ -7,6 +7,9 @@ import BrokenLineChart from '../components/BrokenLineChart';
 import AnalysisChart from '../components/AnalysisChart';
 import ContrastChart from '../components/ContrastChart'
 import MapChart from '../components/MapChart'
+import SixChart from '../components/SixChart';
+import AgeChart from '../components/AgeChart';
+import AgeTrendChart from '../components/AgeTrendChart';
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -31,6 +34,14 @@ export const Home = () => {
         </section>
         <section className="bordered section4">
           <MapChart/>
+          <div className="bordered 年龄段">
+            <h2>新冠感染年龄段分布</h2>
+            <div className="charts">
+              <SixChart/>
+              <AgeChart/>
+              <AgeTrendChart/>
+            </div>
+          </div>
         </section>
         <section className="bordered section5"></section>
       </main>
