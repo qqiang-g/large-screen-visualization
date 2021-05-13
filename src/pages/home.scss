@@ -204,6 +204,18 @@
         flex-direction: column;
       }
 
+      .age-trend-chart {
+        border: 1px solid #08397d;
+        h3 {
+          font-size: px(20);
+           color: #7ab6db;
+            margin-top: px(6);
+        }
+        .chart{
+          flex: 1;
+        }
+      }
+
       .six-chart, .age-chart {
         .legend {
           height: px(40); 

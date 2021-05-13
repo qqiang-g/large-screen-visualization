@@ -33,7 +33,6 @@ const AnalysisChart = () => {
         }
       },
       series: [{
-        name: '故意伤人',
         type: 'line',
         data: [
           90, 70, 30,
