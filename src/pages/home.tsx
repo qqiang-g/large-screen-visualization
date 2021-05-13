@@ -43,7 +43,23 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <section className="bordered section5"></section>
+        <section className="section5">
+          <div className="bordered row1 ">
+            <h2>感染场所</h2>
+            <div className="charts">
+
+            </div>
+          </div>
+          <div className="bordered row2 ">
+            <h2>感染场所</h2>
+            <div className="charts">
+
+            </div>
+          </div>
+          <div className="bordered row3 ">
+            <h2>感染场所</h2>
+          </div>
+        </section>
       </main>
       <footer>
       &copy; 仅供参考 {year}

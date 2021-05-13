@@ -76,6 +76,18 @@
 
     > .section5 {
       grid-area: box5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      > .row1 {
+        height: px(317);
+      }
+      > .row2 {
+        height: px(317);
+      }
+      > .row3 {
+        height: px(455);
+      }
     }
 
     // 病例统计
