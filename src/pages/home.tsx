@@ -10,6 +10,7 @@ import MapChart from '../components/MapChart'
 import SixChart from '../components/SixChart';
 import AgeChart from '../components/AgeChart';
 import AgeTrendChart from '../components/AgeTrendChart';
+import TypeChart from '../components/TypeChart'
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -44,13 +45,13 @@ export const Home = () => {
           </div>
         </section>
         <section className="section5">
-          <div className="bordered row1 ">
-            <h2>感染场所</h2>
+          <div className="bordered row1 type">
+            <h2>感染类型</h2>
             <div className="charts">
-
+              <TypeChart/>
             </div>
           </div>
-          <div className="bordered row2 ">
+          <div className="bordered row2 re">
             <h2>感染场所</h2>
             <div className="charts">
 
