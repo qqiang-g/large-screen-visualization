@@ -49,7 +49,6 @@ const TypeChart  = () => {
 
   return (
     <div ref={divRef} className="chart">
-
     </div>
   );
 };
