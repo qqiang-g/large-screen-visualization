@@ -12,6 +12,7 @@ import AgeChart from '../components/AgeChart';
 import AgeTrendChart from '../components/AgeTrendChart';
 import TypeChart from '../components/TypeChart';
 import WayChart from '../components/WayChart';
+import LocalChart from '../components/LocalChart';
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -53,10 +54,10 @@ export const Home = () => {
               <WayChart/>
             </div>
           </div>
-          <div className="bordered row2 re">
+          <div className="bordered row2 type">
             <h2>感染场所</h2>
             <div className="charts">
-
+              <LocalChart/>
             </div>
           </div>
           <div className="bordered row3 ">
