@@ -14,6 +14,7 @@ import TypeChart from '../components/TypeChart';
 import WayChart from '../components/WayChart';
 import LocalChart from '../components/LocalChart';
 import LocalChart2 from '../components/LocalChart2';
+import { Table } from '../components/Table';
 
 export const Home = () => {
   const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
@@ -62,8 +63,9 @@ export const Home = () => {
               <LocalChart2/>
             </div>
           </div>
-          <div className="bordered row3 ">
-            <h2>感染场所</h2>
+          <div className="bordered row3 type 作案手段">
+            <h2>感染类型分析</h2>
+            <Table/>
           </div>
         </section>
       </main>
