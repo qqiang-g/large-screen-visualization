@@ -17,10 +17,13 @@ import LocalChart2 from '../components/LocalChart2';
 import { Table } from '../components/Table';
 
 export const Home = () => {
-  const year = new Date().getFullYear() + '-' + (new Date().getMonth()+1) + '-' + new Date().getDate();
+  const year = new Date().getFullYear() + '' + (new Date().getMonth()+1) + '-' + new Date().getDate();
   return (
     <div className="home">
-      <header style={{backgroundImage: `url(${headerBg})`}}/>
+      <header style={{backgroundImage: `url(${headerBg})`}}>
+        <h1>全国疫情观察平台</h1>
+        {/* <span className="time">{year}</span> */}
+      </header>
       <main>
         <section className="section1">
           {/* 重要区域统计 */}
