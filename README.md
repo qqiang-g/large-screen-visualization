@@ -20,7 +20,7 @@ yarn build
 yarn serve
 ```
 
-[预览地址](https://qqiang-g.github.io/large-screen-visualization/#/)
+[预览地址](https://quinn-getty.github.io/large-screen-visualization/#/)
 
 ---
 
